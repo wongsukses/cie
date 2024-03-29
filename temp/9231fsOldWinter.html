@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>9231FS 11-16</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <style>
+ol{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #0032FF;
+font-weight: 700;
+}
+li.img(padding-left:-3px;)
+ </style>
+<script>
+        function showSelectedDiv() {
+            var selectedDivId = document.getElementById("divSelector").value;
+            var selectedDiv = document.getElementById(selectedDivId);
+            var allDivs = document.querySelectorAll('div[id^="f"]');
+            
+            for (var i = 0; i < allDivs.length; i++) {
+                if (allDivs[i] === selectedDiv) {
+                    // Show the selected div
+                    allDivs[i].style.display = "block";
+                    
+                    // Change attribute name "data-src" to "src" for images in the selected div
+                    var images = allDivs[i].querySelectorAll('img[data-src]');
+                    for (var j = 0; j < images.length; j++) {
+                        images[j].src = images[j].getAttribute("data-src");
+                        images[j].removeAttribute("data-src");
+                    }
+                } else {
+                    // Hide other divs
+                    allDivs[i].style.display = "none";
+                }
+            }
+        }
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<h1>9231 FurtherStats Winter Topical 2008-2019 by Ikhwan Fisika</h1><hr>
+<form>
+        <label for="divSelector">Select Chapter</label>
+        <select id="divSelector">
+			<option value="fs_ch1_furtherdist">fs_ch1_furtherdistribution</option>
+			<option value="fs_ch2_normalt">fs_ch2_normal_t</option>
+			<option value="fs_ch3_chisquare">fs_ch3_chisquare</option>
+			<option value="fs_ch4_nonparametric">fs_ch4_nonparametric</option>
+			<option value="fs_ch5_pgf">fs_ch5_pgf</option>
+			<option value="fs_ch_bivariate">fs_ch_bivariate (OLD)</option>
+	    </select>
+        <button type="button" onclick="showSelectedDiv()">Show</button>
+    </form><hr>
+
+
+	<div id="fs_ch1_furtherdist" style="display: none;"><h2>Further Work on Distribution</h2><ol>
+		<li>01  (6. Further work on distributions)   [9231_w11_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_ms_21_007.gif" alt=""></details></li><hr>
+		<li>02  (6. Further work on distributions)   [9231_w12_23_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_23_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_23_006.gif" alt=""></details></li><hr>
+		<li>03  (6. Further work on distributions)   [9231_w13_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_21_008.gif" alt=""></details></li><hr>
+		<li>04  (6. Further work on distributions)   [9231_w14_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_ms_21_007.gif" alt=""></details></li><hr>
+		<li>05  (6. Further work on distributions)   [9231_w17_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_ms_21_007.gif" alt=""></details></li><hr>
+		<li>06  (6. Further work on distributions (ct))   [9231_w08_2_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_2_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_ms_2_010.gif" alt=""></details></li><hr>
+		<li>07  (6. Further work on distributions (ct))   [9231_w09_2_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_2_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_ms_2_007.gif" alt=""></details></li><hr>
+		<li>08  (6. Further work on distributions (ct))   [9231_w11_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_ms_21_006.gif" alt=""></details></li><hr>
+		<li>09  (6. Further work on distributions (ct))   [9231_w12_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_21_007.gif" alt=""></details></li><hr>
+		<li>10  (6. Further work on distributions (ct))   [9231_w12_23_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_23_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_23_012.gif" alt=""></details></li><hr>
+		<li>11  (6. Further work on distributions (ct))   [9231_w13_23_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_23_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_23_012.gif" alt=""></details></li><hr>
+		<li>12  (6. Further work on distributions (ct))   [9231_w14_21_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_21_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_ms_21_010.gif" alt=""></details></li><hr>
+		<li>13  (6. Further work on distributions (ct))   [9231_w15_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_ms_21_007.gif" alt=""></details></li><hr>
+		<li>14  (6. Further work on distributions (ct))   [9231_w16_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_ms_21_007.gif" alt=""></details></li><hr>
+		<li>15  (6. Further work on distributions (ct))   [9231_w18_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_ms_21_006.gif" alt=""></details></li><hr>
+		<li>16  (6. Further work on distributions (ct))   [9231_w18_22_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_ms_007.gif" alt=""></details></li><hr>
+		<li>17  (6. Further work on distributions (ct))   [9231_w19_21_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_21_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_ms_21_010.gif" alt=""></details></li><hr>
+		<li>18  (6. Further work on distributions (geometric))   [9231_w09_2_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_2_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_ms_2_010.gif" alt=""></details></li><hr>
+		<li>19  (6. Further work on distributions (geometric))   [9231_w10_2_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_2_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_ms_2_007.gif" alt=""></details></li><hr>
+		<li>20  (6. Further work on distributions (geometric))   [9231_w12_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_21_006.gif" alt=""></details></li><hr>
+		<li>21  (6. Further work on distributions (geometric))   [9231_w13_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_21_006.gif" alt=""></details></li><hr>
+		<li>22  (6. Further work on distributions (geometric))   [9231_w15_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_ms_21_006.gif" alt=""></details></li><hr>
+		<li>23  (6. Further work on distributions (geometric))   [9231_w17_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_ms_21_006.gif" alt=""></details></li><hr>
+		<li>24  (6. Further work on distributions (geometric))   [9231_w18_22_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_ms_008.gif" alt=""></details></li><hr>
+		<li>25  (6. Further work on distributions (ne))   [9231_w10_2_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_2_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_ms_2_012.gif" alt=""></details></li><hr>
+		<li>26  (6. Further work on distributions (ne))   [9231_w13_23_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_23_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_23_006.gif" alt=""></details></li><hr>
+		<li>27  (6. Further work on distributions (ne))   [9231_w16_21_005]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_21_005.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_ms_21_005.gif" alt=""></details></li><hr>
+		<li>28  (6. Further work on distributions (ne))   [9231_w18_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_ms_21_007.gif" alt=""></details></li><hr>
+		<li>29  (6. Further work on distributions (ne))   [9231_w19_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_ms_21_007.gif" alt=""></details></li><hr>
+	</ol></div>
+	<div id="fs_ch2_normalt" style="display: none;"><h2>fs_ch2_Inference using normal and t-distributions</h2><ol>
+		<li>30  (7. Inference using normal and t-distributions)   [9231_w09_2_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_2_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_ms_2_008.gif" alt=""></details></li><hr>
+		<li>31  (7. Inference using normal and t-distributions)   [9231_w19_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_ms_21_006.gif" alt=""></details></li><hr>
+		<li>32  (7. Inference using normal and t-distributions (ci))   [9231_w08_2_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_2_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_ms_2_007.gif" alt=""></details></li><hr>
+		<li>33  (7. Inference using normal and t-distributions (ci))   [9231_w09_2_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_2_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_ms_2_006.gif" alt=""></details></li><hr>
+		<li>34  (7. Inference using normal and t-distributions (ci))   [9231_w10_2_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_2_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_ms_2_006.gif" alt=""></details></li><hr>
+		<li>35  (7. Inference using normal and t-distributions (ci))   [9231_w12_23_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_23_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_23_007.gif" alt=""></details></li><hr>
+		<li>36  (7. Inference using normal and t-distributions (ci))   [9231_w13_23_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_23_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_23_009.gif" alt=""></details></li><hr>
+		<li>37  (7. Inference using normal and t-distributions (ci))   [9231_w18_22_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_ms_006.gif" alt=""></details></li><hr>
+		<li>38  (7. Inference using normal and t-distributions (pair))   [9231_w10_2_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_2_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_ms_2_009.gif" alt=""></details></li><hr>
+		<li>39  (7. Inference using normal and t-distributions (pool))   [9231_w08_2_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_2_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_ms_2_006.gif" alt=""></details></li><hr>
+		<li>40  (7. Inference using normal and t-distributions (pool))   [9231_w08_2_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_2_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_ms_2_012.gif" alt=""></details></li><hr>
+		<li>41  (7. Inference using normal and t-distributions (pool))   [9231_w11_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_ms_21_009.gif" alt=""></details></li><hr>
+		<li>42  (7. Inference using normal and t-distributions (pool))   [9231_w12_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_21_009.gif" alt=""></details></li><hr>
+		<li>43  (7. Inference using normal and t-distributions (pool))   [9231_w12_23_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_23_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_23_009.gif" alt=""></details></li><hr>
+		<li>44  (7. Inference using normal and t-distributions (pool))   [9231_w13_21_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_21_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_21_012.gif" alt=""></details></li><hr>
+		<li>45  (7. Inference using normal and t-distributions (pool))   [9231_w13_23_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_23_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_23_007.gif" alt=""></details></li><hr>
+		<li>46  (7. Inference using normal and t-distributions (pool))   [9231_w14_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_ms_21_006.gif" alt=""></details></li><hr>
+		<li>47  (7. Inference using normal and t-distributions (pool))   [9231_w14_21_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_21_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_ms_21_012.gif" alt=""></details></li><hr>
+		<li>48  (7. Inference using normal and t-distributions (pool))   [9231_w15_21_010S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_21_010S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_ms_21_011.gif" alt=""></details></li><hr>
+		<li>49  (7. Inference using normal and t-distributions (pool))   [9231_w16_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_ms_21_008.gif" alt=""></details></li><hr>
+		<li>50  (7. Inference using normal and t-distributions (pool))   [9231_w17_21_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_21_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_ms_21_010.gif" alt=""></details></li><hr>
+		<li>51  (7. Inference using normal and t-distributions (pool))   [9231_w18_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_ms_21_008.gif" alt=""></details></li><hr>
+		<li>52  (7. Inference using normal and t-distributions (pool))   [9231_w18_22_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_ms_012.gif" alt=""></details></li><hr>
+		<li>53  (7. Inference using normal and t-distributions (pool))   [9231_w19_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_ms_21_008.gif" alt=""></details></li><hr>
+		<li>54  (7. Inference using normal and t-distributions (t))   [9231_w13_21_007]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_21_007.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_21_007.gif" alt=""></details></li><hr>
+		<li>55  (7. Inference using normal and t-distributions (t))   [9231_w15_21_005]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_21_005.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_ms_21_005.gif" alt=""></details></li><hr>
+		<li>56  (7. Inference using normal and t-distributions (t))   [9231_w16_21_006]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_21_006.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_ms_21_006.gif" alt=""></details></li><hr>
+		<li>57  (7. Inference using normal and t-distributions (t))   [9231_w18_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_ms_21_009.gif" alt=""></details></li><hr>
+	</ol></div>
+	<div id="fs_ch3_chisquare" style="display: none;"><h2>fs_ch3_chisquare</h2><ol>
+		<li>58  (8. Chi-Square Test)   [9231_w08_2_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_2_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_ms_2_009.gif" alt=""></details></li><hr>
+		<li>59  (8. Chi-Square Test)   [9231_w09_2_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_2_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_ms_2_009.gif" alt=""></details></li><hr>
+		<li>60  (8. Chi-Square Test)   [9231_w11_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_ms_21_008.gif" alt=""></details></li><hr>
+		<li>61  (8. Chi-Square Test)   [9231_w12_21_010S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_21_010S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_21_011.gif" alt=""></details></li><hr>
+		<li>62  (8. Chi-Square Test)   [9231_w12_23_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_23_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_23_008.gif" alt=""></details></li><hr>
+		<li>63  (8. Chi-Square Test)   [9231_w13_23_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_23_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_23_008.gif" alt=""></details></li><hr>
+		<li>64  (8. Chi-Square Test)   [9231_w14_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_ms_21_008.gif" alt=""></details></li><hr>
+		<li>65  (8. Chi-Square Test)   [9231_w15_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_ms_21_008.gif" alt=""></details></li><hr>
+		<li>66  (8. Chi-Square Test)   [9231_w16_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_ms_21_009.gif" alt=""></details></li><hr>
+		<li>67  (8. Chi-Square Test)   [9231_w18_21_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_21_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_ms_21_012.gif" alt=""></details></li><hr>
+		<li>68  (8. Chi-Square Test)   [9231_w18_22_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_ms_010.gif" alt=""></details></li><hr>
+		<li>69  (8. Chi-Square Test)   [9231_w19_21_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_21_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_ms_21_012.gif" alt=""></details></li><hr>
+		<li>70  (8. Chi-Square Test (i))   [9231_w10_2_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_2_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_ms_2_008.gif" alt=""></details></li><hr>
+		<li>71  (8. Chi-Square Test (i))   [9231_w13_21_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_21_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_21_010.gif" alt=""></details></li><hr>
+		<li>72  (8. Chi-Square Test (i))   [9231_w17_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_ms_21_008.gif" alt=""></details></li><hr>
+</ol></div>
+	<div id="fs_ch_bivariate" style="display: none;"><h2>fs_ch_bivariate</h2><ol>
+		<li>73  (9. Bivariate Data)   [9231_w08_2_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_2_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w08_ms_2_008.gif" alt=""></details></li><hr>
+		<li>74  (9. Bivariate Data)   [9231_w09_2_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_2_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w09_ms_2_012.gif" alt=""></details></li><hr>
+		<li>75  (9. Bivariate Data)   [9231_w10_2_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_2_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w10_ms_2_010.gif" alt=""></details></li><hr>
+		<li>76  (9. Bivariate Data)   [9231_w11_21_010S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_21_010S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w11_ms_21_011.gif" alt=""></details></li><hr>
+		<li>77  (9. Bivariate Data)   [9231_w12_21_008]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_21_008.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_21_008.gif" alt=""></details></li><hr>
+		<li>78  (9. Bivariate Data)   [9231_w12_23_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_23_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w12_ms_23_010.gif" alt=""></details></li><hr>
+		<li>79  (9. Bivariate Data)   [9231_w13_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_21_009.gif" alt=""></details></li><hr>
+		<li>80  (9. Bivariate Data)   [9231_w13_23_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_23_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w13_ms_23_010.gif" alt=""></details></li><hr>
+		<li>81  (9. Bivariate Data)   [9231_w14_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w14_ms_21_009.gif" alt=""></details></li><hr>
+		<li>82  (9. Bivariate Data)   [9231_w17_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_ms_21_009.gif" alt=""></details></li><hr>
+		<li>83  (9. Bivariate Data)   [9231_w18_22_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_22_ms_009.gif" alt=""></details></li><hr>
+		<li>84  (9. Bivariate Data (correlation))   [9231_w15_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w15_ms_21_009.gif" alt=""></details></li><hr>
+		<li>85  (9. Bivariate Data (correlation))   [9231_w16_21_010S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_21_010S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w16_ms_21_011.gif" alt=""></details></li><hr>
+		<li>86  (9. Bivariate Data (regression))   [9231_w18_21_010]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_21_010.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w18_ms_21_010.gif" alt=""></details></li><hr>
+		<li>87  (9. Bivariate Data (regression))   [9231_w19_21_009]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_21_009.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w19_ms_21_009.gif" alt=""></details></li><hr>
+		<li>88  (9. Bivariate Data (regression)/7)   [9231_w17_21_011S]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_21_011S.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/9231_w17_ms_21_012.gif" alt=""></details></li><hr>
+	</ol></div>
+	<div id="fs_ch4_nonparametric" style="display: none;"><h2>fs_ch4_nonparametric test</h2><ol>
+		<li>89  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2006_004]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2006_004.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2006_004ms.gif" alt=""></details></li><hr>
+		<li>90  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2007_004b]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2007_004b.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2007_004bms.gif" alt=""></details></li><hr>
+		<li>91  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2008_001b]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2008_001b.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2008_001bms.gif" alt=""></details></li><hr>
+		<li>92  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2009_001b]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2009_001b.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2009_001bms.gif" alt=""></details></li><hr>
+		<li>93  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2010_002b]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2010_002b.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2010_002bms.gif" alt=""></details></li><hr>
+		<li>94  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2011_002b]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2011_002b.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2011_002bms.gif" alt=""></details></li><hr>
+		<li>95  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2012_003b]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2012_003b.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2012_003bms.gif" alt=""></details></li><hr>
+		<li>96  (NonParametric Test)   [OCR_MEI_S3_4768_Jan2013_004a]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR_MEI_S3_4768_Jan2013_004a.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\OCR_MEI_S3_4768_Jan2013_004ams.gif" alt=""></details></li><hr>
+	</ol></div>
+	<div id="fs_ch5_pgf" style="display: none;"><h2>fs_ch5_pgf</h2><ol>
+		<li>97  (PGF)   [IBMathHL_N15_P3_sp_005pgf]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/IBMathHL_N15_P3_sp_005pgf.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\IBMathHL_N15_P3_sp_005pgfms.gif" alt=""></details></li><hr>
+		<li>98  (PGF)   [IBMathHL_N16_P3_sp_004pgf]<br/><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/IBMathHL_N16_P3_sp_004pgf.gif" alt=""><details><summary>------------------------</summary><img data-src="https://ikhwanfisika.sirv.com/Images/cieold/OCR\IBMathHL_N16_P3_sp_004pgfms.gif" alt=""></details></li><hr>
+	
+	</ol></div>
+		
+		
+
+
+</div> 
+</body>
+</html>

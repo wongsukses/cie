@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>9709</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <style>
+ol{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #0032FF;
+font-weight: 700;
+}
+li.img{padding-left:-3px;}
+h3{color: maroon}
+
+ </style>
+<script>
+        function showSelectedDiv() {
+            var selectedDivId = document.getElementById("divSelector").value;
+            var selectedDiv = document.getElementById(selectedDivId);
+            var allDivs = document.querySelectorAll('div[id^="f"]');
+            
+            for (var i = 0; i < allDivs.length; i++) {
+                if (allDivs[i] === selectedDiv) {
+                    // Show the selected div
+                    allDivs[i].style.display = "block";
+                    
+                    // Change attribute name "data-src" to "src" for images in the selected div
+                    var images = allDivs[i].querySelectorAll('img[data-src]');
+                    for (var j = 0; j < images.length; j++) {
+                        images[j].src = images[j].getAttribute("data-src");
+                        images[j].removeAttribute("data-src");
+                    }
+                } else {
+                    // Hide other divs
+                    allDivs[i].style.display = "none";
+                }
+            }
+        }
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<h1>9709 Pastpapers Topical by Ikhwan Fisika</h1><hr>
+<form>
+        <label for="divSelector">Select Chapter</label>
+        <select id="divSelector">
+            <option value="fp1_ch1_CoordinateGeometry">p1_ch1_CoordinateGeometry</option>
+			<option value="fp1_ch2_Function">p1_ch2_Function</option>
+			<option value="fp1_ch3_IntersectionOfPoints">p1_ch3_IntersectionOfPoints</option>
+			<option value="fp1_ch4_SequenceSeries">p1_ch4_SequenceSeries</option>
+			<option value="fp1_ch4-2_Binomial">p1_ch4-2_Binomial</option>
+			<option value="fp1_ch5_Trigonometry">p1_ch5_Trigonometry</option>
+			<option value="fp1_ch5-2_MeasureOfCircle">p1_ch5-2_MeasureOfCircle</option>
+			<option value="fp1_ch6_Differentiation">p1_ch6_Differentiation</option>
+			<option value="fp1_ch7_Integration">p1_ch7_Integration</option>
+			<option value="fp3_ch_1_Algebra">p3_ch_1_FurtherAlgebra</option>
+			<option value="fp3_ch_2_LogartihmExponent">p3_ch_2_LogartihmExponent</option>
+			<option value="fp3_ch_3_Trigonometry">p3_ch_3_Trigonometry</option>
+			<option value="fp3_ch_4_Differentiation">p3_ch_4_Differentiation</option>
+			<option value="fp3_ch_5_Integration">p3_ch_5_Integration</option>
+			<option value="fp3_ch_6_DifferentialEquation">p3_ch_6_DifferentialEquation</option>
+			<option value="fp3_ch_7_NumericalMethods">p3_ch_7_NumericalMethods</option>
+			<option value="fp3_ch_8_ComplexNumbers">p3_ch_8_ComplexNumbers</option>
+			<option value="fp3_ch_9_Vectors">p3_ch_9_Vectors</option>
+			<option value="fp5_ch_1_DataRepresentation">p5_ch_1_DataRepresentation</option>
+			<option value="fp5_ch_2_PermutationCombination">p5_ch_2_PermutationCombination</option>
+			<option value="fp5_ch_3_Probability">p5_ch_3_Probability</option>
+			<option value="fp5_ch_4_DRV">p5_ch_4_DRV</option>
+			<option value="fp5_ch_5_Binomial">p5_ch_5_Binomial</option>
+			<option value="fp5_ch_6_Geometric">p5_ch_6_Geometric</option>
+			<option value="fp5_ch_7_NormalDistribution">p5_ch_7_NormalDistribution</option>
+			<option value="fp5_ch_72_NormalApproximation">p5_ch_72_NormalApproximation</option>
+			<option value="fp6_ch_1_PoissonDistribution">p6_ch_1_PoissonDistribution</option>
+			<option value="fp6_ch_2_LCRV">p6_ch_2_LCRV</option>
+			<option value="fp6_ch_3_CRV">p6_ch_3_CRV</option>
+			<option value="fp6_ch_4_SamplingEstimation">p6_ch_4_SamplingEstimation</option>
+			<option value="fp6_ch_5_HT Normal">p6_ch_5_HT Normal</option>
+			<option value="fp6_ch_6_HT Binomial">p6_ch_6_HT Binomial</option>
+        </select>
+        <button type="button" onclick="showSelectedDiv()">Show</button>
+    </form><hr>
+
+
+	<div id="fp1_ch1_CoordinateGeometry" style="display: none;">
+	<h2>p1_ch1_CoordinateGeometry </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_007.gif" alt=""></li><hr>
+			<li>9709_s19_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_002.gif" alt=""></li><hr>
+			<li>9709_s19_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_004.gif" alt=""></li><hr>
+			<li>9709_w19_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_002.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_010.gif" alt=""></li><hr>
+			<li>9709_s20_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_011.gif" alt=""></li><hr>
+			<li>9709_s20_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_010.gif" alt=""></li><hr>
+			<li>9709_w20_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_011.gif" alt=""></li><hr>
+			<li>9709_w20_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_009.gif" alt=""></li><hr>
+			<li>9709_w20_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_009.gif" alt=""></li><hr>
+			<li>9709_s21_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_010.gif" alt=""></li><hr>
+			<li>9709_s21_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_007.gif" alt=""></li><hr>
+			<li>9709_s21_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_006.gif" alt=""></li><hr>
+			<li>9709_s21_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_010.gif" alt=""></li><hr>
+			<li>9709_w21_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_009.gif" alt=""></li><hr>
+			<li>9709_w21_12_012<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_012.gif" alt=""></li><hr>
+			<li>9709_s22_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_007.gif" alt=""></li><hr>
+			<li>9709_s22_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_008.gif" alt=""></li><hr>
+			<li>9709_s22_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_009.gif" alt=""></li><hr>
+			<li>9709_w22_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_011.gif" alt=""></li><hr>
+			<li>9709_w22_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_005.gif" alt=""></li><hr>
+			<li>9709_w22_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_001.gif" alt=""></li><hr>
+			<li>9709_w22_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_011.gif" alt=""></li><hr>
+			<li>9709_s23_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_005.gif" alt=""></li><hr>
+			<li>9709_s23_11_012<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_012.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch2_Function" style="display: none;">
+	<h2>p1_ch2_Function </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_004.gif" alt=""></li><hr>
+			<li>9709_s19_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_001.gif" alt=""></li><hr>
+			<li>9709_s19_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_007.gif" alt=""></li><hr>
+			<li>9709_s19_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_005.gif" alt=""></li><hr>
+			<li>9709_w19_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_002.gif" alt=""></li><hr>
+			<li>9709_w19_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_009.gif" alt=""></li><hr>
+			<li>9709_w19_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_007.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_009.gif" alt=""></li><hr>
+			<li>9709_s20_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_003.gif" alt=""></li><hr>
+			<li>9709_s20_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_009.gif" alt=""></li><hr>
+			<li>9709_s20_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_005.gif" alt=""></li><hr>
+			<li>9709_s20_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_006.gif" alt=""></li><hr>
+			<li>9709_w20_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_006.gif" alt=""></li><hr>
+			<li>9709_w20_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_001.gif" alt=""></li><hr>
+			<li>9709_w20_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_011.gif" alt=""></li><hr>
+			<li>9709_w20_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_005.gif" alt=""></li><hr>
+			<li>9709_w20_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_011.gif" alt=""></li><hr>
+			<li>9709_w20_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_004.gif" alt=""></li><hr>
+			<li>9709_s21_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_008.gif" alt=""></li><hr>
+			<li>9709_s21_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_006.gif" alt=""></li><hr>
+			<li>9709_s21_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_005.gif" alt=""></li><hr>
+			<li>9709_s21_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_002.gif" alt=""></li><hr>
+			<li>9709_s21_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_001.gif" alt=""></li><hr>
+			<li>9709_s21_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_009.gif" alt=""></li><hr>
+			<li>9709_w21_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_006.gif" alt=""></li><hr>
+			<li>9709_w21_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_003.gif" alt=""></li><hr>
+			<li>9709_w21_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_001.gif" alt=""></li><hr>
+			<li>9709_w21_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_003.gif" alt=""></li><hr>
+			<li>9709_w21_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_002.gif" alt=""></li><hr>
+			<li>9709_w21_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_008.gif" alt=""></li><hr>
+			<li>9709_s22_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_006.gif" alt=""></li><hr>
+			<li>9709_s22_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_004.gif" alt=""></li><hr>
+			<li>9709_s22_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_010.gif" alt=""></li><hr>
+			<li>9709_s22_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_006.gif" alt=""></li><hr>
+			<li>9709_s22_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_001.gif" alt=""></li><hr>
+			<li>9709_w22_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_002.gif" alt=""></li><hr>
+			<li>9709_w22_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_009.gif" alt=""></li><hr>
+			<li>9709_w22_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_006.gif" alt=""></li><hr>
+			<li>9709_w22_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_005.gif" alt=""></li><hr>
+			<li>9709_w22_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_009.gif" alt=""></li><hr>
+			<li>9709_w22_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_008.gif" alt=""></li><hr>
+			<li>9709_s23_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_007.gif" alt=""></li><hr>
+			<li>9709_s23_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_002.gif" alt=""></li><hr>
+			<li>9709_s23_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_001.gif" alt=""></li><hr>
+			<li>9709_s23_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_004.gif" alt=""></li><hr>
+			<li>9709_s23_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_003.gif" alt=""></li><hr>
+			<li>9709_s23_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_008.gif" alt=""></li><hr>
+			<li>9709_s23_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_003.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch3_IntersectionOfPoints" style="display: none;">
+	<h2>p1_ch3_IntersectionOfPoints </h2>
+
+		<ol>
+<!--		<li>9709_s19_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_002.gif" alt=""></li><hr>
+			<li>9709_w19_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_006.gif" alt=""></li><hr>
+			<li>9709_w19_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_006.gif" alt=""></li><hr>
+			<li>9709_w19_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_003.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_001.gif" alt=""></li><hr>
+			<li>9709_s20_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_006.gif" alt=""></li><hr>
+			<li>9709_s20_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_005.gif" alt=""></li><hr>
+			<li>9709_w20_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_004.gif" alt=""></li><hr>
+			<li>9709_w20_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_003.gif" alt=""></li><hr>
+			<li>9709_w20_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_001.gif" alt=""></li><hr>
+			<li>9709_s21_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_003.gif" alt=""></li><hr>
+			<li>9709_s21_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_006.gif" alt=""></li><hr>
+			<li>9709_w21_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_009.gif" alt=""></li><hr>
+			<li>9709_w21_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_007.gif" alt=""></li><hr>
+			<li>9709_w21_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_002.gif" alt=""></li><hr>
+			<li>9709_s22_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_005.gif" alt=""></li><hr>
+			<li>9709_w22_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_010.gif" alt=""></li><hr>
+			<li>9709_w22_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_001.gif" alt=""></li><hr>
+			<li>9709_s23_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_005.gif" alt=""></li><hr>
+			<li>9709_s23_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_010.gif" alt=""></li><hr>
+			<li>9709_s23_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_005.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch4_SequenceSeries" style="display: none;">
+	<h2>p1_ch4_SequenceSeries </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_005.gif" alt=""></li><hr>
+			<li>9709_s19_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_010.gif" alt=""></li><hr>
+			<li>9709_w19_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_009.gif" alt=""></li><hr>
+			<li>9709_w19_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_008.gif" alt=""></li><hr>
+			<li>9709_w19_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_004.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_008.gif" alt=""></li><hr>
+			<li>9709_s20_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_004.gif" alt=""></li><hr>
+			<li>9709_s20_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_003.gif" alt=""></li><hr>
+			<li>9709_s20_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_001.gif" alt=""></li><hr>
+			<li>9709_w20_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_007.gif" alt=""></li><hr>
+			<li>9709_w20_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_004.gif" alt=""></li><hr>
+			<li>9709_w20_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_002.gif" alt=""></li><hr>
+			<li>9709_w20_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_008.gif" alt=""></li><hr>
+			<li>9709_s21_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_009.gif" alt=""></li><hr>
+			<li>9709_s21_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_008.gif" alt=""></li><hr>
+			<li>9709_s21_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_005.gif" alt=""></li><hr>
+			<li>9709_s21_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_002.gif" alt=""></li><hr>
+			<li>9709_w21_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_004.gif" alt=""></li><hr>
+			<li>9709_w21_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_006.gif" alt=""></li><hr>
+			<li>9709_w21_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_005.gif" alt=""></li><hr>
+			<li>9709_w21_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_004.gif" alt=""></li><hr>
+			<li>9709_s22_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_003.gif" alt=""></li><hr>
+			<li>9709_s22_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_004.gif" alt=""></li><hr>
+			<li>9709_s22_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_002.gif" alt=""></li><hr>
+			<li>9709_s22_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_002.gif" alt=""></li><hr>
+			<li>9709_w22_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_009.gif" alt=""></li><hr>
+			<li>9709_w22_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_004.gif" alt=""></li><hr>
+			<li>9709_w22_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_002.gif" alt=""></li><hr>
+			<li>9709_w22_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_007.gif" alt=""></li><hr>
+			<li>9709_s23_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_008.gif" alt=""></li><hr>
+			<li>9709_s23_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_009.gif" alt=""></li><hr>
+			<li>9709_s23_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_006.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch4-2_Binomial" style="display: none;">
+	<h2>p1_ch4-2_Binomial </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_002.gif" alt=""></li><hr>
+			<li>9709_s19_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_001.gif" alt=""></li><hr>
+			<li>9709_s19_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_001.gif" alt=""></li><hr>
+			<li>9709_w19_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_001.gif" alt=""></li><hr>
+			<li>9709_w19_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_001.gif" alt=""></li><hr>
+			<li>9709_w19_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_001.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_004.gif" alt=""></li><hr>
+			<li>9709_s20_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_001.gif" alt=""></li><hr>
+			<li>9709_s20_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_002.gif" alt=""></li><hr>
+			<li>9709_w20_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_005.gif" alt=""></li><hr>
+			<li>9709_w20_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_001.gif" alt=""></li><hr>
+			<li>9709_w20_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_005.gif" alt=""></li><hr>
+			<li>9709_s21_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_007.gif" alt=""></li><hr>
+			<li>9709_s21_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_004.gif" alt=""></li><hr>
+			<li>9709_s21_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_003.gif" alt=""></li><hr>
+			<li>9709_w21_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_002.gif" alt=""></li><hr>
+			<li>9709_w21_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_008.gif" alt=""></li><hr>
+			<li>9709_w21_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_001.gif" alt=""></li><hr>
+			<li>9709_s22_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_001.gif" alt=""></li><hr>
+			<li>9709_s22_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_001.gif" alt=""></li><hr>
+			<li>9709_s22_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_003.gif" alt=""></li><hr>
+			<li>9709_w22_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_003.gif" alt=""></li><hr>
+			<li>9709_w22_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_004.gif" alt=""></li><hr>
+			<li>9709_s23_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_003.gif" alt=""></li><hr>
+			<li>9709_s23_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_002.gif" alt=""></li><hr>
+			<li>9709_s23_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_002.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch5_Trigonometry" style="display: none;">
+	<h2>p1_ch5_Trigonometry </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_009.gif" alt=""></li><hr>
+			<li>9709_s19_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_006.gif" alt=""></li><hr>
+			<li>9709_s19_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_004.gif" alt=""></li><hr>
+			<li>9709_s19_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_009.gif" alt=""></li><hr>
+			<li>9709_s19_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_006.gif" alt=""></li><hr>
+			<li>9709_w19_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_007.gif" alt=""></li><hr>
+			<li>9709_w19_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_006.gif" alt=""></li><hr>
+			<li>9709_w19_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_005.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_007.gif" alt=""></li><hr>
+			<li>9709_s20_12_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_002.gif" alt=""></li><hr>
+			<li>9709_s20_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_007.gif" alt=""></li><hr>
+			<li>9709_s20_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_004.gif" alt=""></li><hr>
+			<li>9709_w20_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_007.gif" alt=""></li><hr>
+			<li>9709_w20_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_003.gif" alt=""></li><hr>
+			<li>9709_w20_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_011.gif" alt=""></li><hr>
+			<li>9709_w20_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_006.gif" alt=""></li><hr>
+			<li>9709_w20_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_007.gif" alt=""></li><hr>
+			<li>9709_s21_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_004.gif" alt=""></li><hr>
+			<li>9709_s21_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_010.gif" alt=""></li><hr>
+			<li>9709_s21_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_007.gif" alt=""></li><hr>
+			<li>9709_s21_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_004.gif" alt=""></li><hr>
+			<li>9709_w21_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_007.gif" alt=""></li><hr>
+			<li>9709_w21_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_005.gif" alt=""></li><hr>
+			<li>9709_w21_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_001.gif" alt=""></li><hr>
+			<li>9709_w21_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_005.gif" alt=""></li><hr>
+			<li>9709_w21_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_003.gif" alt=""></li><hr>
+			<li>9709_s22_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_005.gif" alt=""></li><hr>
+			<li>9709_s22_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_002.gif" alt=""></li><hr>
+			<li>9709_s22_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_011.gif" alt=""></li><hr>
+			<li>9709_s22_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_008.gif" alt=""></li><hr>
+			<li>9709_s22_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_004.gif" alt=""></li><hr>
+			<li>9709_w22_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_006.gif" alt=""></li><hr>
+			<li>9709_w22_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_001.gif" alt=""></li><hr>
+			<li>9709_w22_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_007.gif" alt=""></li><hr>
+			<li>9709_w22_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_003.gif" alt=""></li><hr>
+			<li>9709_w22_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_006.gif" alt=""></li><hr>
+			<li>9709_s23_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_004.gif" alt=""></li><hr>
+			<li>9709_s23_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_008.gif" alt=""></li><hr>
+			<li>9709_s23_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_007.gif" alt=""></li><hr>
+			<li>9709_s23_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_007.gif" alt=""></li><hr>
+			<li>9709_s23_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_001.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch5-2_MeasureOfCircle" style="display: none;">
+	<h2>p1_ch5-2_MeasureOfCircle </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_003.gif" alt=""></li><hr>
+			<li>9709_s19_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_005.gif" alt=""></li><hr>
+			<li>9709_s19_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_003.gif" alt=""></li><hr>
+			<li>9709_w19_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_004.gif" alt=""></li><hr>
+			<li>9709_w19_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_004.gif" alt=""></li><hr>
+			<li>9709_w19_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_008.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_005.gif" alt=""></li><hr>
+			<li>9709_s20_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_007.gif" alt=""></li><hr>
+			<li>9709_s20_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_008.gif" alt=""></li><hr>
+			<li>9709_w20_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_009.gif" alt=""></li><hr>
+			<li>9709_w20_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_008.gif" alt=""></li><hr>
+			<li>9709_w20_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_010.gif" alt=""></li><hr>
+			<li>9709_s21_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_005.gif" alt=""></li><hr>
+			<li>9709_s21_12_012<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_012.gif" alt=""></li><hr>
+			<li>9709_s21_11_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_008.gif" alt=""></li><hr>
+			<li>9709_w21_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_005.gif" alt=""></li><hr>
+			<li>9709_w21_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_007.gif" alt=""></li><hr>
+			<li>9709_w21_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_006.gif" alt=""></li><hr>
+			<li>9709_s22_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_009.gif" alt=""></li><hr>
+			<li>9709_s22_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_007.gif" alt=""></li><hr>
+			<li>9709_s22_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_005.gif" alt=""></li><hr>
+			<li>9709_w22_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_008.gif" alt=""></li><hr>
+			<li>9709_w22_11_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_005.gif" alt=""></li><hr>
+			<li>9709_s23_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_006.gif" alt=""></li><hr>
+			<li>9709_s23_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_006.gif" alt=""></li><hr>
+			<li>9709_s23_11_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_004.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch6_Differentiation" style="display: none;">
+	<h2>p1_ch6_Differentiation </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_008.gif" alt=""></li><hr>
+			<li>9709_s19_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_009.gif" alt=""></li><hr>
+			<li>9709_s19_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_003.gif" alt=""></li><hr>
+			<li>9709_s19_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_010.gif" alt=""></li><hr>
+			<li>9709_w19_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_011.gif" alt=""></li><hr>
+			<li>9709_w19_13_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_005.gif" alt=""></li><hr>
+			<li>9709_w19_13_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_003.gif" alt=""></li><hr>
+			<li>9709_w19_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_005.gif" alt=""></li><hr>
+			<li>9709_w19_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_009.gif" alt=""></li><hr>
+			<li>9709_w19_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_002.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_011.gif" alt=""></li><hr>
+			<li>9709_s20_13_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_006.gif" alt=""></li><hr>
+			<li>9709_s20_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_010.gif" alt=""></li><hr>
+			<li>9709_s20_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_003.gif" alt=""></li><hr>
+			<li>9709_s20_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_009.gif" alt=""></li><hr>
+			<li>9709_w20_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_010.gif" alt=""></li><hr>
+			<li>9709_w20_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_008.gif" alt=""></li><hr>
+			<li>9709_w20_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_010.gif" alt=""></li><hr>
+			<li>9709_w20_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_007.gif" alt=""></li><hr>
+			<li>9709_w20_11_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_006.gif" alt=""></li><hr>
+			<li>9709_w20_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_003.gif" alt=""></li><hr>
+			<li>9709_s21_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_011.gif" alt=""></li><hr>
+			<li>9709_s21_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_002.gif" alt=""></li><hr>
+			<li>9709_s21_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_011.gif" alt=""></li><hr>
+			<li>9709_s21_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_003.gif" alt=""></li><hr>
+			<li>9709_s21_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_011.gif" alt=""></li><hr>
+			<li>9709_w21_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_010.gif" alt=""></li><hr>
+			<li>9709_w21_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_010.gif" alt=""></li><hr>
+			<li>9709_w21_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_009.gif" alt=""></li><hr>
+			<li>9709_w21_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_009.gif" alt=""></li><hr>
+			<li>9709_s22_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_011.gif" alt=""></li><hr>
+			<li>9709_s22_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_010.gif" alt=""></li><hr>
+			<li>9709_s22_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_008.gif" alt=""></li><hr>
+			<li>9709_s22_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_009.gif" alt=""></li><hr>
+			<li>9709_s22_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_010.gif" alt=""></li><hr>
+			<li>9709_w22_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_007.gif" alt=""></li><hr>
+			<li>9709_w22_13_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_004.gif" alt=""></li><hr>
+			<li>9709_w22_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_011.gif" alt=""></li><hr>
+			<li>9709_w22_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_010.gif" alt=""></li><hr>
+			<li>9709_w22_11_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_003.gif" alt=""></li><hr>
+			<li>9709_s23_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_009.gif" alt=""></li><hr>
+			<li>9709_s23_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_011.gif" alt=""></li><hr>
+			<li>9709_s23_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_011.gif" alt=""></li><hr>
+			<li>9709_s23_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_009.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp1_ch7_Integration" style="display: none;">
+	<h2>p1_ch7_Integration </h2>
+
+		<ol>
+<!--		<li>9709_s19_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_13_010.gif" alt=""></li><hr>
+			<li>9709_s19_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_12_011.gif" alt=""></li><hr>
+			<li>9709_s19_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_011.gif" alt=""></li><hr>
+			<li>9709_s19_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_11_010.gif" alt=""></li><hr>
+			<li>9709_w19_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_011.gif" alt=""></li><hr>
+			<li>9709_w19_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_13_008.gif" alt=""></li><hr>
+			<li>9709_w19_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_010.gif" alt=""></li><hr>
+			<li>9709_w19_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_12_003.gif" alt=""></li><hr>
+			<li>9709_w19_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_11_011.gif" alt=""></li><hr>
+-->			<li>9709_s20_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_011.gif" alt=""></li><hr>
+			<li>9709_s20_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_13_002.gif" alt=""></li><hr>
+			<li>9709_s20_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_12_008.gif" alt=""></li><hr>
+			<li>9709_s20_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_11_011.gif" alt=""></li><hr>
+			<li>9709_w20_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_010.gif" alt=""></li><hr>
+			<li>9709_w20_13_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_13_002.gif" alt=""></li><hr>
+			<li>9709_w20_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_010.gif" alt=""></li><hr>
+			<li>9709_w20_12_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_12_007.gif" alt=""></li><hr>
+			<li>9709_w20_11_012<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_012.gif" alt=""></li><hr>
+			<li>9709_w20_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_11_002.gif" alt=""></li><hr>
+			<li>9709_s21_13_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_011.gif" alt=""></li><hr>
+			<li>9709_s21_13_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_13_001.gif" alt=""></li><hr>
+			<li>9709_s21_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_011.gif" alt=""></li><hr>
+			<li>9709_s21_12_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_12_009.gif" alt=""></li><hr>
+			<li>9709_s21_11_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_011.gif" alt=""></li><hr>
+			<li>9709_s21_11_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_11_001.gif" alt=""></li><hr>
+			<li>9709_w21_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_010.gif" alt=""></li><hr>
+			<li>9709_w21_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_13_008.gif" alt=""></li><hr>
+			<li>9709_w21_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_011.gif" alt=""></li><hr>
+			<li>9709_w21_12_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_12_004.gif" alt=""></li><hr>
+			<li>9709_w21_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_010.gif" alt=""></li><hr>
+			<li>9709_w21_11_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_11_009.gif" alt=""></li><hr>
+			<li>9709_s22_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_010.gif" alt=""></li><hr>
+			<li>9709_s22_13_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_13_008.gif" alt=""></li><hr>
+			<li>9709_s22_12_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_006.gif" alt=""></li><hr>
+			<li>9709_s22_12_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_12_003.gif" alt=""></li><hr>
+			<li>9709_s22_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_010.gif" alt=""></li><hr>
+			<li>9709_s22_11_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_11_007.gif" alt=""></li><hr>
+			<li>9709_w22_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_010.gif" alt=""></li><hr>
+			<li>9709_w22_13_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_13_007.gif" alt=""></li><hr>
+			<li>9709_w22_12_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_011.gif" alt=""></li><hr>
+			<li>9709_w22_12_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_010.gif" alt=""></li><hr>
+			<li>9709_w22_12_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_12_008.gif" alt=""></li><hr>
+			<li>9709_w22_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_010.gif" alt=""></li><hr>
+			<li>9709_w22_11_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_11_002.gif" alt=""></li><hr>
+			<li>9709_s23_13_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_010.gif" alt=""></li><hr>
+			<li>9709_s23_13_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_13_009.gif" alt=""></li><hr>
+			<li>9709_s23_12_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_005.gif" alt=""></li><hr>
+			<li>9709_s23_12_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_12_001.gif" alt=""></li><hr>
+			<li>9709_s23_11_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_11_010.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_1_Algebra" style="display: none;">
+	<h2>p3_ch_1_FurtherAlgebra </h2>
+	
+	<h3>Polynomial</h3>
+	<ol>
+			<li>9709_s20_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_001.gif" alt=""></li><hr>
+			<li>9709_w20_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_009.gif" alt=""></li><hr>
+			<li>9709_s21_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_009.gif" alt=""></li><hr>
+			<li>9709_w21_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_001.gif" alt=""></li><hr>
+			<li>9709_s22_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_003.gif" alt=""></li><hr>
+			<li>9709_s22_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_005.gif" alt=""></li><hr>
+			<li>9709_w22_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_002.gif" alt=""></li><hr>
+			<li>9709_s23_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_002.gif" alt=""></li><hr>
+						
+	</ol>
+	<h3>Modulus Function</h3>
+	<ol>
+			<li>9709_s20_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_001.gif" alt=""></li><hr>
+			<li>9709_w20_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_001.gif" alt=""></li><hr>
+			<li>9709_s21_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_001.gif" alt=""></li><hr>
+			<li>9709_s21_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_001.gif" alt=""></li><hr>
+			<li>9709_w21_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_002.gif" alt=""></li><hr>
+			<li>9709_w21_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_002.gif" alt=""></li><hr>
+			<li>9709_s22_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_001.gif" alt=""></li><hr>
+			<li>9709_w22_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_001.gif" alt=""></li><hr>
+			<li>9709_s23_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_001.gif" alt=""></li><hr>
+			<li>9709_s23_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_002.gif" alt=""></li><hr>
+			
+			
+	</ol>
+	<h3>Partial Fraction</h3>
+	<ol>
+			<li>9709_w21_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_004.gif" alt=""></li><hr>
+			<li>9709_s22_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_007.gif" alt=""></li><hr>
+			<li>9709_w22_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_010.gif" alt=""></li><hr>
+			<li>9709_s23_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_010.gif" alt=""></li><hr>
+			
+	</ol>
+	<h3>Newton's Expansion Binomial</h3>
+	<ol>
+			<li>9709_s20_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_002.gif" alt=""></li><hr>
+			<li>9709_w20_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_002.gif" alt=""></li><hr>
+			<li>9709_s21_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_001.gif" alt=""></li><hr>
+			<li>9709_w21_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_006.gif" alt=""></li><hr>
+			<li>9709_s22_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_002.gif" alt=""></li><hr>
+			<li>9709_w22_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_002.gif" alt=""></li><hr>
+			<li>9709_s23_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_003.gif" alt=""></li><hr>
+			
+	</ol>
+	
+<!--		<li>9709_s19_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_009.gif" alt=""></li><hr>
+			<li>9709_s19_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_001.gif" alt=""></li><hr>
+			<li>9709_s19_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_008.gif" alt=""></li><hr>
+			<li>9709_w19_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_002.gif" alt=""></li><hr>
+			<li>9709_w19_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_001.gif" alt=""></li><hr>
+			<li>9709_w19_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_003.gif" alt=""></li><hr>
+			<li>9709_w19_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_002.gif" alt=""></li><hr>
+-->			
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_2_LogartihmExponent" style="display: none;">
+	<h2>p3_ch_2_LogartihmExponent </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_001.gif" alt=""></li><hr>
+			<li>9709_s19_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_002.gif" alt=""></li><hr>
+			<li>9709_s19_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_002.gif" alt=""></li><hr>
+			<li>9709_w19_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_003.gif" alt=""></li><hr>
+			<li>9709_w19_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_001.gif" alt=""></li><hr>
+			<li>9709_w19_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_001.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_003.gif" alt=""></li><hr>
+			<li>9709_s20_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_002.gif" alt=""></li><hr>
+			<li>9709_s20_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_001.gif" alt=""></li><hr>
+			<li>9709_w20_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_001.gif" alt=""></li><hr>
+			<li>9709_w20_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_003.gif" alt=""></li><hr>
+			<li>9709_w20_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_004.gif" alt=""></li><hr>
+			<li>9709_s21_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_002.gif" alt=""></li><hr>
+			<li>9709_s21_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_003.gif" alt=""></li><hr>
+			<li>9709_s21_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_002.gif" alt=""></li><hr>
+			<li>9709_w21_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_003.gif" alt=""></li><hr>
+			<li>9709_w21_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_001.gif" alt=""></li><hr>
+			<li>9709_w21_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_001.gif" alt=""></li><hr>
+			<li>9709_s22_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_003.gif" alt=""></li><hr>
+			<li>9709_s22_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_001.gif" alt=""></li><hr>
+			<li>9709_s22_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_001.gif" alt=""></li><hr>
+			<li>9709_w22_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_001.gif" alt=""></li><hr>
+			<li>9709_w22_32_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_001.gif" alt=""></li><hr>
+			<li>9709_w22_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_003.gif" alt=""></li><hr>
+			<li>9709_s23_33_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_001.gif" alt=""></li><hr>
+			<li>9709_s23_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_002.gif" alt=""></li><hr>
+			<li>9709_s23_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_001.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_3_Trigonometry" style="display: none;">
+	<h2>p3_ch_3_Trigonometry </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_003.gif" alt=""></li><hr>
+			<li>9709_s19_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_010.gif" alt=""></li><hr>
+			<li>9709_s19_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_003.gif" alt=""></li><hr>
+			<li>9709_s19_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_006.gif" alt=""></li><hr>
+			<li>9709_s19_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_004.gif" alt=""></li><hr>
+			<li>9709_w19_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_004.gif" alt=""></li><hr>
+			<li>9709_w19_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_004.gif" alt=""></li><hr>
+			<li>9709_w19_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_009.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_005.gif" alt=""></li><hr>
+			<li>9709_s20_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_005.gif" alt=""></li><hr>
+			<li>9709_s20_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_003.gif" alt=""></li><hr>
+			<li>9709_w20_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_004.gif" alt=""></li><hr>
+			<li>9709_w20_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_006.gif" alt=""></li><hr>
+			<li>9709_s21_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_005.gif" alt=""></li><hr>
+			<li>9709_s21_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_003.gif" alt=""></li><hr>
+			<li>9709_w21_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_006.gif" alt=""></li><hr>
+			<li>9709_w21_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_005.gif" alt=""></li><hr>
+			<li>9709_w21_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_008.gif" alt=""></li><hr>
+			<li>9709_w21_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_005.gif" alt=""></li><hr>
+			<li>9709_w21_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_002.gif" alt=""></li><hr>
+			<li>9709_s22_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_002.gif" alt=""></li><hr>
+			<li>9709_s22_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_002.gif" alt=""></li><hr>
+			<li>9709_s22_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_003.gif" alt=""></li><hr>
+			<li>9709_w22_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_007.gif" alt=""></li><hr>
+			<li>9709_w22_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_004.gif" alt=""></li><hr>
+			<li>9709_w22_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_006.gif" alt=""></li><hr>
+			<li>9709_w22_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_004.gif" alt=""></li><hr>
+			<li>9709_s23_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_006.gif" alt=""></li><hr>
+			<li>9709_s23_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_004.gif" alt=""></li><hr>
+			<li>9709_s23_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_004.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_4_Differentiation" style="display: none;">
+	<h2>p3_ch_4_Differentiation </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_007.gif" alt=""></li><hr>
+			<li>9709_s19_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_004.gif" alt=""></li><hr>
+			<li>9709_s19_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_004.gif" alt=""></li><hr>
+			<li>9709_s19_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_003.gif" alt=""></li><hr>
+			<li>9709_w19_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_010.gif" alt=""></li><hr>
+			<li>9709_w19_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_008.gif" alt=""></li><hr>
+			<li>9709_w19_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_005.gif" alt=""></li><hr>
+			<li>9709_w19_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_002.gif" alt=""></li><hr>
+			<li>9709_w19_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_006.gif" alt=""></li><hr>
+			<li>9709_w19_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_003.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_004.gif" alt=""></li><hr>
+			<li>9709_s20_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_004.gif" alt=""></li><hr>
+			<li>9709_s20_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_004.gif" alt=""></li><hr>
+			<li>9709_w20_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_005.gif" alt=""></li><hr>
+			<li>9709_w20_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_003.gif" alt=""></li><hr>
+			<li>9709_s21_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_003.gif" alt=""></li><hr>
+			<li>9709_s21_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_008.gif" alt=""></li><hr>
+			<li>9709_s21_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_006.gif" alt=""></li><hr>
+			<li>9709_w21_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_007.gif" alt=""></li><hr>
+			<li>9709_w21_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_009.gif" alt=""></li><hr>
+			<li>9709_w21_31_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_003.gif" alt=""></li><hr>
+			<li>9709_s22_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_006.gif" alt=""></li><hr>
+			<li>9709_s22_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_004.gif" alt=""></li><hr>
+			<li>9709_s22_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_007.gif" alt=""></li><hr>
+			<li>9709_s22_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_004.gif" alt=""></li><hr>
+			<li>9709_s22_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_008.gif" alt=""></li><hr>
+			<li>9709_w22_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_004.gif" alt=""></li><hr>
+			<li>9709_w22_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_003.gif" alt=""></li><hr>
+			<li>9709_s23_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_004.gif" alt=""></li><hr>
+			<li>9709_s23_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_007.gif" alt=""></li><hr>
+			<li>9709_s23_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_005.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_5_Integration" style="display: none;">
+	<h2>p3_ch_5_Integration </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_003.gif" alt=""></li><hr>
+			<li>9709_s19_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_002.gif" alt=""></li><hr>
+			<li>9709_s19_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_010.gif" alt=""></li><hr>
+			<li>9709_s19_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_008.gif" alt=""></li><hr>
+			<li>9709_s19_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_006.gif" alt=""></li><hr>
+			<li>9709_s19_31_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_001.gif" alt=""></li><hr>
+			<li>9709_w19_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_010.gif" alt=""></li><hr>
+			<li>9709_w19_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_008.gif" alt=""></li><hr>
+			<li>9709_w19_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_009.gif" alt=""></li><hr>
+			<li>9709_w19_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_008.gif" alt=""></li><hr>
+			<li>9709_w19_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_009.gif" alt=""></li><hr>
+			<li>9709_w19_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_008.gif" alt=""></li><hr>
+			<li>9709_w19_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_006.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_007.gif" alt=""></li><hr>
+			<li>9709_s20_33_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_002.gif" alt=""></li><hr>
+			<li>9709_s20_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_006.gif" alt=""></li><hr>
+			<li>9709_s20_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_003.gif" alt=""></li><hr>
+			<li>9709_s20_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_007.gif" alt=""></li><hr>
+			<li>9709_s20_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_005.gif" alt=""></li><hr>
+			<li>9709_w20_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_009.gif" alt=""></li><hr>
+			<li>9709_w20_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_010.gif" alt=""></li><hr>
+			<li>9709_s21_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_008.gif" alt=""></li><hr>
+			<li>9709_s21_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_004.gif" alt=""></li><hr>
+			<li>9709_s21_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_006.gif" alt=""></li><hr>
+			<li>9709_s21_32_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_004.gif" alt=""></li><hr>
+			<li>9709_s21_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_009.gif" alt=""></li><hr>
+			<li>9709_s21_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_004.gif" alt=""></li><hr>
+			<li>9709_w21_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_009.gif" alt=""></li><hr>
+			<li>9709_w21_33_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_004.gif" alt=""></li><hr>
+			<li>9709_w21_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_006.gif" alt=""></li><hr>
+			<li>9709_w21_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_008.gif" alt=""></li><hr>
+			<li>9709_w21_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_004.gif" alt=""></li><hr>
+			<li>9709_s22_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_008.gif" alt=""></li><hr>
+			<li>9709_s22_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_006.gif" alt=""></li><hr>
+			<li>9709_w22_33_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_011.gif" alt=""></li><hr>
+			<li>9709_w22_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_003.gif" alt=""></li><hr>
+			<li>9709_w22_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_010.gif" alt=""></li><hr>
+			<li>9709_w22_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_008.gif" alt=""></li><hr>
+			<li>9709_w22_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_009.gif" alt=""></li><hr>
+			<li>9709_s23_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_007.gif" alt=""></li><hr>
+			<li>9709_s23_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_010.gif" alt=""></li><hr>
+			<li>9709_s23_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_009.gif" alt=""></li><hr>
+			<li>9709_s23_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_008.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_6_DifferentialEquation" style="display: none;">
+	<h2>p3_ch_6_DifferentialEquation </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_005.gif" alt=""></li><hr>
+			<li>9709_s19_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_007.gif" alt=""></li><hr>
+			<li>9709_s19_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_005.gif" alt=""></li><hr>
+			<li>9709_w19_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_009.gif" alt=""></li><hr>
+			<li>9709_w19_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_006.gif" alt=""></li><hr>
+			<li>9709_w19_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_004.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_010.gif" alt=""></li><hr>
+			<li>9709_s20_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_007.gif" alt=""></li><hr>
+			<li>9709_s20_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_008.gif" alt=""></li><hr>
+			<li>9709_w20_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_007.gif" alt=""></li><hr>
+			<li>9709_w20_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_008.gif" alt=""></li><hr>
+			<li>9709_s21_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_007.gif" alt=""></li><hr>
+			<li>9709_s21_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_007.gif" alt=""></li><hr>
+			<li>9709_s21_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_010.gif" alt=""></li><hr>
+			<li>9709_w21_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_010.gif" alt=""></li><hr>
+			<li>9709_w21_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_007.gif" alt=""></li><hr>
+			<li>9709_w21_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_007.gif" alt=""></li><hr>
+			<li>9709_s22_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_008.gif" alt=""></li><hr>
+			<li>9709_s22_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_006.gif" alt=""></li><hr>
+			<li>9709_s22_31_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_004.gif" alt=""></li><hr>
+			<li>9709_w22_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_010.gif" alt=""></li><hr>
+			<li>9709_w22_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_007.gif" alt=""></li><hr>
+			<li>9709_w22_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_008.gif" alt=""></li><hr>
+			<li>9709_s23_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_008.gif" alt=""></li><hr>
+			<li>9709_s23_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_008.gif" alt=""></li><hr>
+			<li>9709_s23_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_007.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_7_NumericalMethods" style="display: none;">
+	<h2>p3_ch_7_NumericalMethods </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_006.gif" alt=""></li><hr>
+			<li>9709_s19_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_006.gif" alt=""></li><hr>
+			<li>9709_s19_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_007.gif" alt=""></li><hr>
+			<li>9709_w19_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_005.gif" alt=""></li><hr>
+			<li>9709_w19_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_009.gif" alt=""></li><hr>
+			<li>9709_w19_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_005.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_006.gif" alt=""></li><hr>
+			<li>9709_s20_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_009.gif" alt=""></li><hr>
+			<li>9709_s20_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_006.gif" alt=""></li><hr>
+			<li>9709_w20_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_010.gif" alt=""></li><hr>
+			<li>9709_w20_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_005.gif" alt=""></li><hr>
+			<li>9709_s21_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_006.gif" alt=""></li><hr>
+			<li>9709_s21_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_010.gif" alt=""></li><hr>
+			<li>9709_s21_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_007.gif" alt=""></li><hr>
+			<li>9709_w21_32_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_011.gif" alt=""></li><hr>
+			<li>9709_w21_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_008.gif" alt=""></li><hr>
+			<li>9709_s22_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_010.gif" alt=""></li><hr>
+			<li>9709_s22_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_005.gif" alt=""></li><hr>
+			<li>9709_s22_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_010.gif" alt=""></li><hr>
+			<li>9709_w22_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_008.gif" alt=""></li><hr>
+			<li>9709_w22_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_009.gif" alt=""></li><hr>
+			<li>9709_w22_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_007.gif" alt=""></li><hr>
+			<li>9709_s23_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_005.gif" alt=""></li><hr>
+			<li>9709_s23_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_006.gif" alt=""></li><hr>
+			<li>9709_s23_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_009.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_8_ComplexNumbers" style="display: none;">
+	<h2>p3_ch_8_ComplexNumbers </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_008.gif" alt=""></li><hr>
+			<li>9709_s19_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_005.gif" alt=""></li><hr>
+			<li>9709_s19_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_010.gif" alt=""></li><hr>
+			<li>9709_w19_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_006.gif" alt=""></li><hr>
+			<li>9709_w19_32_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_007.gif" alt=""></li><hr>
+			<li>9709_w19_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_010.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_009.gif" alt=""></li><hr>
+			<li>9709_s20_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_008.gif" alt=""></li><hr>
+			<li>9709_s20_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_010.gif" alt=""></li><hr>
+			<li>9709_w20_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_006.gif" alt=""></li><hr>
+			<li>9709_w20_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_007.gif" alt=""></li><hr>
+			<li>9709_w20_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_002.gif" alt=""></li><hr>
+			<li>9709_s21_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_010.gif" alt=""></li><hr>
+			<li>9709_s21_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_005.gif" alt=""></li><hr>
+			<li>9709_s21_32_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_002.gif" alt=""></li><hr>
+			<li>9709_s21_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_005.gif" alt=""></li><hr>
+			<li>9709_w21_33_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_011.gif" alt=""></li><hr>
+			<li>9709_w21_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_005.gif" alt=""></li><hr>
+			<li>9709_w21_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_003.gif" alt=""></li><hr>
+			<li>9709_w21_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_010.gif" alt=""></li><hr>
+			<li>9709_s22_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_005.gif" alt=""></li><hr>
+			<li>9709_s22_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_010.gif" alt=""></li><hr>
+			<li>9709_s22_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_007.gif" alt=""></li><hr>
+			<li>9709_w22_33_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_006.gif" alt=""></li><hr>
+			<li>9709_w22_33_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_005.gif" alt=""></li><hr>
+			<li>9709_w22_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_005.gif" alt=""></li><hr>
+			<li>9709_w22_31_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_005.gif" alt=""></li><hr>
+			<li>9709_w22_31_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_002.gif" alt=""></li><hr>
+			<li>9709_s23_33_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_011.gif" alt=""></li><hr>
+			<li>9709_s23_33_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_003.gif" alt=""></li><hr>
+			<li>9709_s23_32_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_005.gif" alt=""></li><hr>
+			<li>9709_s23_32_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_003.gif" alt=""></li><hr>
+			<li>9709_s23_31_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_010.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp3_ch_9_Vectors" style="display: none;">
+	<h2>p3_ch_9_Vectors </h2>
+
+		<ol>
+<!--		<li>9709_s19_33_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_33_010.gif" alt=""></li><hr>
+			<li>9709_s19_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_32_009.gif" alt=""></li><hr>
+			<li>9709_s19_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s19_31_009.gif" alt=""></li><hr>
+			<li>9709_w19_33_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_33_007.gif" alt=""></li><hr>
+			<li>9709_w19_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_32_010.gif" alt=""></li><hr>
+			<li>9709_w19_31_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w19_31_007.gif" alt=""></li><hr>
+-->			<li>9709_s20_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_33_008.gif" alt=""></li><hr>
+			<li>9709_s20_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_32_010.gif" alt=""></li><hr>
+			<li>9709_s20_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_31_009.gif" alt=""></li><hr>
+			<li>9709_w20_32_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_32_008.gif" alt=""></li><hr>
+			<li>9709_w20_31_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_31_011.gif" alt=""></li><hr>
+			<li>9709_s21_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_33_009.gif" alt=""></li><hr>
+			<li>9709_s21_32_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_32_011.gif" alt=""></li><hr>
+			<li>9709_s21_31_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_31_008.gif" alt=""></li><hr>
+			<li>9709_w21_33_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_33_008.gif" alt=""></li><hr>
+			<li>9709_w21_32_010<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_32_010.gif" alt=""></li><hr>
+			<li>9709_w21_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_31_009.gif" alt=""></li><hr>
+			<li>9709_s22_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_33_009.gif" alt=""></li><hr>
+			<li>9709_s22_32_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_32_009.gif" alt=""></li><hr>
+			<li>9709_s22_31_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_31_009.gif" alt=""></li><hr>
+			<li>9709_w22_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_33_009.gif" alt=""></li><hr>
+			<li>9709_w22_32_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_32_006.gif" alt=""></li><hr>
+			<li>9709_w22_31_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_31_011.gif" alt=""></li><hr>
+			<li>9709_s23_33_009<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_33_009.gif" alt=""></li><hr>
+			<li>9709_s23_32_011<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_32_011.gif" alt=""></li><hr>
+			<li>9709_s23_31_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_31_006.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_1_DataRepresentation" style="display: none;">
+	<h2>p5_ch_1_DataRepresentation </h2>
+
+		<ol>
+			<li>9709_s20_53_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_53_006.gif" alt=""></li><hr>
+			<li>9709_s20_52_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_52_003.gif" alt=""></li><hr>
+			<li>9709_s20_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_52_001.gif" alt=""></li><hr>
+			<li>9709_w20_52_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_52_005.gif" alt=""></li><hr>
+			<li>9709_w20_51_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_51_006.gif" alt=""></li><hr>
+			<li>9709_s21_53_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_003.gif" alt=""></li><hr>
+			<li>9709_s21_53_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_001.gif" alt=""></li><hr>
+			<li>9709_s21_51_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_51_005.gif" alt=""></li><hr>
+			<li>9709_w21_53_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_53_003.gif" alt=""></li><hr>
+			<li>9709_w21_53_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_53_002.gif" alt=""></li><hr>
+			<li>9709_w21_52_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_52_007.gif" alt=""></li><hr>
+			<li>9709_w21_51_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_51_006.gif" alt=""></li><hr>
+			<li>9709_w21_51_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_51_002.gif" alt=""></li><hr>
+			<li>9709_s22_53_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_53_002.gif" alt=""></li><hr>
+			<li>9709_s22_53_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_53_001.gif" alt=""></li><hr>
+			<li>9709_s22_52_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_52_003.gif" alt=""></li><hr>
+			<li>9709_s22_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_52_001.gif" alt=""></li><hr>
+			<li>9709_s22_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_51_003.gif" alt=""></li><hr>
+			<li>9709_w22_53_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_53_003.gif" alt=""></li><hr>
+			<li>9709_w22_53_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_53_001.gif" alt=""></li><hr>
+			<li>9709_w22_52_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_52_004.gif" alt=""></li><hr>
+			<li>9709_w22_51_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_51_005.gif" alt=""></li><hr>
+			<li>9709_w22_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_51_003.gif" alt=""></li><hr>
+			<li>9709_s23_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_53_004.gif" alt=""></li><hr>
+			<li>9709_s23_52_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_52_003.gif" alt=""></li><hr>
+			<li>9709_s23_51_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_51_005.gif" alt=""></li><hr>
+			<li>9709_s23_51_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_51_001.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_2_PermutationCombination" style="display: none;">
+	<h2>p5_ch_2_PermutationCombination </h2>
+
+		<ol>
+			<li>9709_s20_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_53_007.gif" alt=""></li><hr>
+			<li>9709_w20_53_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_005.gif" alt=""></li><hr>
+			<li>9709_w20_53_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_003.gif" alt=""></li><hr>
+			<li>9709_w20_52_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_52_006.gif" alt=""></li><hr>
+			<li>9709_w20_51_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_51_007.gif" alt=""></li><hr>
+			<li>9709_s21_53_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_006.gif" alt=""></li><hr>
+			<li>9709_s21_52_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_52_006.gif" alt=""></li><hr>
+			<li>9709_s21_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_51_003.gif" alt=""></li><hr>
+			<li>9709_s21_51_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_51_001.gif" alt=""></li><hr>
+			<li>9709_w21_53_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_53_005.gif" alt=""></li><hr>
+			<li>9709_w21_53_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_53_001.gif" alt=""></li><hr>
+			<li>9709_w21_52_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_52_004.gif" alt=""></li><hr>
+			<li>9709_w21_52_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_52_002.gif" alt=""></li><hr>
+			<li>9709_w21_51_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_51_005.gif" alt=""></li><hr>
+			<li>9709_s22_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_53_007.gif" alt=""></li><hr>
+			<li>9709_s22_52_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_52_006.gif" alt=""></li><hr>
+			<li>9709_s22_51_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_51_002.gif" alt=""></li><hr>
+			<li>9709_s22_51_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_51_001.gif" alt=""></li><hr>
+			<li>9709_w22_53_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_53_006.gif" alt=""></li><hr>
+			<li>9709_w22_52_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_52_007.gif" alt=""></li><hr>
+			<li>9709_w22_51_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_51_006.gif" alt=""></li><hr>
+			<li>9709_s23_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_53_007.gif" alt=""></li><hr>
+			<li>9709_s23_52_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_52_006.gif" alt=""></li><hr>
+			<li>9709_s23_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_51_003.gif" alt=""></li><hr>
+			<li>9709_s23_51_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_51_002.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_3_Probability" style="display: none;">
+	<h2>p5_ch_3_Probability </h2>
+
+		<ol>
+			<li>9709_s20_53_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_53_001.gif" alt=""></li><hr>
+			<li>9709_s20_52_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_52_002.gif" alt=""></li><hr>
+			<li>9709_s20_51_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_51_005.gif" alt=""></li><hr>
+			<li>9709_w20_52_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_52_004.gif" alt=""></li><hr>
+			<li>9709_w20_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_52_001.gif" alt=""></li><hr>
+			<li>9709_w20_51_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_51_002.gif" alt=""></li><hr>
+			<li>9709_w20_51_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_51_001.gif" alt=""></li><hr>
+			<li>9709_s21_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_007.gif" alt=""></li><hr>
+			<li>9709_s21_52_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_52_003.gif" alt=""></li><hr>
+			<li>9709_s21_51_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_51_004.gif" alt=""></li><hr>
+			<li>9709_w21_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_53_007.gif" alt=""></li><hr>
+			<li>9709_w21_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_52_001.gif" alt=""></li><hr>
+			<li>9709_w21_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_51_003.gif" alt=""></li><hr>
+			<li>9709_s22_53_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_53_006.gif" alt=""></li><hr>
+			<li>9709_s22_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_53_004.gif" alt=""></li><hr>
+			<li>9709_s22_52_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_52_007.gif" alt=""></li><hr>
+			<li>9709_s22_51_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_51_006.gif" alt=""></li><hr>
+			<li>9709_w22_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_53_007.gif" alt=""></li><hr>
+			<li>9709_w22_52_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_52_005.gif" alt=""></li><hr>
+			<li>9709_w22_52_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_52_003.gif" alt=""></li><hr>
+			<li>9709_w22_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_52_001.gif" alt=""></li><hr>
+			<li>9709_s23_53_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_53_005.gif" alt=""></li><hr>
+			<li>9709_s23_53_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_53_001.gif" alt=""></li><hr>
+			<li>9709_s23_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_52_001.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_4_DRV" style="display: none;">
+	<h2>p5_ch_4_DRV </h2>
+
+		<ol>
+			<li>9709_s20_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_53_004.gif" alt=""></li><hr>
+			<li>9709_s20_52_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_52_005.gif" alt=""></li><hr>
+			<li>9709_s20_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_51_003.gif" alt=""></li><hr>
+			<li>9709_w20_53_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_006.gif" alt=""></li><hr>
+			<li>9709_w20_52_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_52_002.gif" alt=""></li><hr>
+			<li>9709_w20_51_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_51_004.gif" alt=""></li><hr>
+			<li>9709_s21_53_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_002.gif" alt=""></li><hr>
+			<li>9709_s21_52_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_52_004.gif" alt=""></li><hr>
+			<li>9709_s21_51_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_51_007.gif" alt=""></li><hr>
+			<li>9709_w21_53_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_53_006.gif" alt=""></li><hr>
+			<li>9709_w21_52_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_52_003.gif" alt=""></li><hr>
+			<li>9709_w21_51_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_51_004.gif" alt=""></li><hr>
+			<li>9709_s22_53_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_53_003.gif" alt=""></li><hr>
+			<li>9709_s22_52_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_52_002.gif" alt=""></li><hr>
+			<li>9709_s22_51_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_51_004.gif" alt=""></li><hr>
+			<li>9709_w22_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_53_004.gif" alt=""></li><hr>
+			<li>9709_w22_51_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_51_001.gif" alt=""></li><hr>
+			<li>9709_s23_53_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_53_003.gif" alt=""></li><hr>
+			<li>9709_s23_52_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_52_004.gif" alt=""></li><hr>
+			<li>9709_s23_52_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_52_002.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_5_Binomial" style="display: none;">
+	<h2>p5_ch_5_Binomial </h2>
+
+		<ol>
+			<li>9709_s20_53_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_53_002.gif" alt=""></li><hr>
+			<li>9709_s20_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_51_003.gif" alt=""></li><hr>
+			<li>9709_w20_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_52_001.gif" alt=""></li><hr>
+			<li>9709_w20_51_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_51_003.gif" alt=""></li><hr>
+			<li>9709_w21_52_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_52_005.gif" alt=""></li><hr>
+			<li>9709_w21_51_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_51_001.gif" alt=""></li><hr>
+			<li>9709_w22_52_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_52_006.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_6_Geometric" style="display: none;">
+	<h2>p5_ch_6_Geometric </h2>
+
+		<ol>
+			<li>9709_s20_53_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_53_005.gif" alt=""></li><hr>
+			<li>9709_s20_51_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_51_007.gif" alt=""></li><hr>
+			<li>9709_s20_51_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_51_001.gif" alt=""></li><hr>
+			<li>9709_w20_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_007.gif" alt=""></li><hr>
+			<li>9709_w20_53_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_002.gif" alt=""></li><hr>
+			<li>9709_s21_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_004.gif" alt=""></li><hr>
+			<li>9709_s21_52_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_52_007.gif" alt=""></li><hr>
+			<li>9709_s21_52_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_52_001.gif" alt=""></li><hr>
+			<li>9709_s23_51_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_51_007.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_7_NormalDistribution" style="display: none;">
+	<h2>p5_ch_7_NormalDistribution </h2>
+
+		<ol>
+			<li>9709_s20_53_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_53_003.gif" alt=""></li><hr>
+			<li>9709_s20_52_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_52_004.gif" alt=""></li><hr>
+			<li>9709_s20_51_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_51_006.gif" alt=""></li><hr>
+			<li>9709_w20_53_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_001.gif" alt=""></li><hr>
+			<li>9709_w20_52_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_52_003.gif" alt=""></li><hr>
+			<li>9709_w20_51_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_51_005.gif" alt=""></li><hr>
+			<li>9709_s21_52_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_52_002.gif" alt=""></li><hr>
+			<li>9709_s21_53_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_005.gif" alt=""></li><hr>
+			<li>9709_s21_51_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_51_002.gif" alt=""></li><hr>
+			<li>9709_w21_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_53_004.gif" alt=""></li><hr>
+			<li>9709_w21_52_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_52_006.gif" alt=""></li><hr>
+			<li>9709_w21_51_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_51_007.gif" alt=""></li><hr>
+			<li>9709_s22_53_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_53_005.gif" alt=""></li><hr>
+			<li>9709_s22_52_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_52_004.gif" alt=""></li><hr>
+			<li>9709_s22_51_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_51_005.gif" alt=""></li><hr>
+			<li>9709_w22_53_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_53_005.gif" alt=""></li><hr>
+			<li>9709_w22_52_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_52_002.gif" alt=""></li><hr>
+			<li>9709_w22_51_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_51_004.gif" alt=""></li><hr>
+			<li>9709_s23_51_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_51_004.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp5_ch_72_NormalApproximation" style="display: none;">
+	<h2>p5_ch_72_NormalApproximation </h2>
+
+		<ol>
+			<li>9709_s20_52_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_52_007.gif" alt=""></li><hr>
+			<li>9709_w20_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_004.gif" alt=""></li><hr>
+			<li>9709_w20_53_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_53_004.gif" alt=""></li><hr>
+			<li>9709_s21_53_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_53_007.gif" alt=""></li><hr>
+			<li>9709_s21_52_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_52_005.gif" alt=""></li><hr>
+			<li>9709_s21_51_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_51_006.gif" alt=""></li><hr>
+			<li>9709_s22_52_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_52_005.gif" alt=""></li><hr>
+			<li>9709_w22_53_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_53_002.gif" alt=""></li><hr>
+			<li>9709_w22_51_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_51_002.gif" alt=""></li><hr>
+			<li>9709_s23_53_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_53_006.gif" alt=""></li><hr>
+			<li>9709_s23_53_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_53_002.gif" alt=""></li><hr>
+			<li>9709_s23_52_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_52_005.gif" alt=""></li><hr>
+			<li>9709_s23_51_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_51_006.gif" alt=""></li><hr>
+		</ol>
+	</div> 
+
+	<div id="fp6_ch_1_PoissonDistribution" style="display: none;">
+	<h2>p6_ch_1_PoissonDistribution </h2>
+
+		<ol>
+			<li>9709_s20_63_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_63_004.gif" alt=""></li><hr>
+			<li>9709_s20_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_62_005.gif" alt=""></li><hr>
+			<li>9709_s20_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_62_003.gif" alt=""></li><hr>
+			<li>9709_s20_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_61_005.gif" alt=""></li><hr>
+			<li>9709_w20_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_62_005.gif" alt=""></li><hr>
+			<li>9709_w20_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_62_001.gif" alt=""></li><hr>
+			<li>9709_w20_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_61_005.gif" alt=""></li><hr>
+			<li>9709_w20_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_61_001.gif" alt=""></li><hr>
+			<li>9709_s21_63_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_63_005.gif" alt=""></li><hr>
+			<li>9709_s21_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_62_007.gif" alt=""></li><hr>
+			<li>9709_s21_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_005.gif" alt=""></li><hr>
+			<li>9709_s21_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_001.gif" alt=""></li><hr>
+			<li>9709_w21_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_62_005.gif" alt=""></li><hr>
+			<li>9709_w21_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_61_002.gif" alt=""></li><hr>
+			<li>9709_s22_63_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_63_005.gif" alt=""></li><hr>
+			<li>9709_s22_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_62_007.gif" alt=""></li><hr>
+			<li>9709_s22_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_61_005.gif" alt=""></li><hr>
+			<li>9709_w22_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_62_003.gif" alt=""></li><hr>
+			<li>9709_w22_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_61_003.gif" alt=""></li><hr>
+			<li>9709_s23_63_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_006.gif" alt=""></li><hr>
+			<li>9709_s23_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_62_004.gif" alt=""></li><hr>
+			<li>9709_s23_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_62_002.gif" alt=""></li><hr>
+			<li>9709_s23_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_61_001.gif" alt=""></li><hr>
+			<li>9709_w23_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_61_003.gif" alt=""></li><hr>
+			<li>9709_w23_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_001.gif" alt=""></li><hr>
+			
+		</ol>
+	</div> 
+
+	<div id="fp6_ch_2_LCRV" style="display: none;">
+	<h2>fp6_ch_2_LCRV </h2>
+
+		<ol>
+			<li>9709_s20_63_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_63_002.gif" alt=""></li><hr>
+			<li>9709_s20_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_62_001.gif" alt=""></li><hr>
+			<li>9709_s20_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_61_003.gif" alt=""></li><hr>
+			<li>9709_w20_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_62_007.gif" alt=""></li><hr>
+			<li>9709_w20_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_61_003.gif" alt=""></li><hr>
+			<li>9709_s21_63_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_63_001.gif" alt=""></li><hr>
+			<li>9709_s21_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_62_004.gif" alt=""></li><hr>
+			<li>9709_s21_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_62_002.gif" alt=""></li><hr>
+			<li>9709_s21_61_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_007.gif" alt=""></li><hr>
+			<li>9709_s22_63_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_63_001.gif" alt=""></li><hr>
+			<li>9709_s22_63_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_63_004.gif" alt=""></li><hr>
+			<li>9709_s22_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_62_006.gif" alt=""></li><hr>
+			<li>9709_s22_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_61_003.gif" alt=""></li><hr>
+			<li>9709_s22_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_61_004.gif" alt=""></li><hr>
+			<li>9709_w22_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_62_006.gif" alt=""></li><hr>
+			<li>9709_w22_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_61_004.gif" alt=""></li><hr>
+			<li>9709_s23_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_61_005.gif" alt=""></li><hr>
+			<li>9709_s23_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_62_005.gif" alt=""></li><hr>
+			<li>9709_s23_63_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_004.gif" alt=""></li><hr>
+			<li>9709_w23_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_61_004.gif" alt=""></li><hr>
+			<li>9709_w23_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_007.gif" alt=""></li><hr>
+			<li>9709_w23_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_006.gif" alt=""></li><hr>
+			<li>9709_w23_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_007.gif" alt=""></li><hr>
+			
+		</ol>
+	</div> 
+
+	<div id="fp6_ch_3_CRV" style="display: none;">
+	<h2>p6_ch_3_CRV </h2>
+
+		<ol>
+			<li>9709_s20_63_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_63_006.gif" alt=""></li><hr>
+			<li>9709_s20_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_62_006.gif" alt=""></li><hr>
+			<li>9709_s20_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_61_006.gif" alt=""></li><hr>
+			<li>9709_w20_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_62_003.gif" alt=""></li><hr>
+			<li>9709_w20_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_61_004.gif" alt=""></li><hr>
+			<li>9709_s21_63_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_63_006.gif" alt=""></li><hr>
+			<li>9709_s21_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_62_003.gif" alt=""></li><hr>
+			<li>9709_s21_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_006.gif" alt=""></li><hr>
+			<li>9709_s21_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_003.gif" alt=""></li><hr>
+			<li>9709_w21_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_62_007.gif" alt=""></li><hr>
+			<li>9709_w21_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_61_004.gif" alt=""></li><hr>
+			<li>9709_s22_63_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_63_007.gif" alt=""></li><hr>
+			<li>9709_s22_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_62_005.gif" alt=""></li><hr>
+			<li>9709_s22_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_61_006.gif" alt=""></li><hr>
+			<li>9709_w22_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_62_007.gif" alt=""></li><hr>
+			<li>9709_w22_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_61_006.gif" alt=""></li><hr>
+			<li>9709_s23_63_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_007.gif" alt=""></li><hr>
+			<li>9709_s23_63_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_001.gif" alt=""></li><hr>
+			<li>9709_s23_62_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_62_007.gif" alt=""></li><hr>
+			<li>9709_s23_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_62_003.gif" alt=""></li><hr>
+			<li>9709_s23_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_61_004.gif" alt=""></li><hr>
+			<li>9709_s23_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_61_002.gif" alt=""></li><hr>
+			<li>9709_w23_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_61_006.gif" alt=""></li><hr>
+			<li>9709_w23_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_005.gif" alt=""></li><hr>
+			
+		</ol>
+	</div> 
+
+	<div id="fp6_ch_4_SamplingEstimation" style="display: none;">
+	<h2>p6_ch_4_SamplingEstimation </h2>
+
+		<ol>
+			<li>9709_s20_63_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_63_001.gif" alt=""></li><hr>
+			<li>9709_w21_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_61_001.gif" alt=""></li><hr>
+			<li>9709_w21_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_61_006.gif" alt=""></li><hr>
+			<li>9709_w21_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_62_002.gif" alt=""></li><hr>
+			<li>9709_w21_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_62_001.gif" alt=""></li><hr>
+			<li>9709_s22_63_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_63_006.gif" alt=""></li><hr>
+			<li>9709_w22_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_61_001.gif" alt=""></li><hr>
+			<li>9709_s23_63_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_002.gif" alt=""></li><hr>
+			<li>9709_s23_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_61_006.gif" alt=""></li><hr>
+			<li>9709_w23_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_61_001.gif" alt=""></li><hr>
+			
+		</ol>
+		<h3>p6_ch_4_SamplingEstimation - Confidence Interval</h3>
+		<ol>
+			<li>9709_s20_63_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_63_005.gif" alt=""></li><hr>
+			<li>9709_w20_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_61_002.gif" alt=""></li><hr>
+			<li>9709_w20_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_62_002.gif" alt=""></li><hr>
+			<li>9709_s20_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_61_001.gif" alt=""></li><hr>
+			<li>9709_s21_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_004.gif" alt=""></li><hr>
+			<li>9709_s21_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_62_006.gif" alt=""></li><hr>
+			<li>9709_s21_63_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_63_004.gif" alt=""></li><hr>
+			<li>9709_w21_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_62_003.gif" alt=""></li><hr>
+			<li>9709_s22_61_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_61_001.gif" alt=""></li><hr>
+			<li>9709_s22_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_62_001.gif" alt=""></li><hr>
+			<li>9709_w22_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_61_005.gif" alt=""></li><hr>
+			<li>9709_w22_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_62_001.gif" alt=""></li><hr>
+			<li>9709_s23_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_62_001.gif" alt=""></li><hr>
+			<li>9709_s23_63_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_003.gif" alt=""></li><hr>
+			<li>9709_w23_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_61_002.gif" alt=""></li><hr>
+			<li>9709_w23_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_002.gif" alt=""></li><hr>
+			
+			
+		</ol>
+	</div> 
+
+	<div id="fp6_ch_5_HT Normal" style="display: none;">
+	<h2>p6_ch_5_HT Normal </h2>
+
+		<ol>
+			<li>9709_s20_63_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_63_007.gif" alt=""></li><hr>
+			<li>9709_s20_63_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_63_003.gif" alt=""></li><hr>
+			<li>9709_s20_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_62_004.gif" alt=""></li><hr>
+			<li>9709_s20_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_61_002.gif" alt=""></li><hr>
+			<li>9709_w20_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_62_004.gif" alt=""></li><hr>
+			<li>9709_w20_61_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_61_006.gif" alt=""></li><hr>
+			<li>9709_s21_63_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_63_002.gif" alt=""></li><hr>
+			<li>9709_s21_62_001<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_62_001.gif" alt=""></li><hr>
+			<li>9709_s21_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_62_005.gif" alt=""></li><hr>
+			<li>9709_s21_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_002.gif" alt=""></li><hr>
+			<li>9709_w21_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_62_004.gif" alt=""></li><hr>
+			<li>9709_w21_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_61_003.gif" alt=""></li><hr>
+			<li>9709_w21_61_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_61_007.gif" alt=""></li><hr>
+			<li>9709_s22_63_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_63_003.gif" alt=""></li><hr>
+			<li>9709_s22_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_62_002.gif" alt=""></li><hr>
+			<li>9709_s22_61_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_61_007.gif" alt=""></li><hr>
+			<li>9709_w22_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_62_004.gif" alt=""></li><hr>
+			<li>9709_w22_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_62_002.gif" alt=""></li><hr>
+			<li>9709_w22_61_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_61_007.gif" alt=""></li><hr>
+			<li>9709_s23_63_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_005.gif" alt=""></li><hr>
+			<li>9709_s23_61_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_61_003.gif" alt=""></li><hr>
+			<li>9709_w23_61_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_61_007.gif" alt=""></li><hr>
+			<li>9709_w23_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_004.gif" alt=""></li><hr>
+			
+		</ol>
+	</div> 
+
+	<div id="fp6_ch_6_HT Binomial" style="display: none;">
+	<h2>p6_ch_6_HT Binomial </h2>
+
+		<ol>
+			<li>9709_s20_62_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_62_002.gif" alt=""></li><hr>
+			<li>9709_s20_61_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s20_61_004.gif" alt=""></li><hr>
+			<li>9709_w20_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_62_006.gif" alt=""></li><hr>
+			<li>9709_w20_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w20_61_005.gif" alt=""></li><hr>
+			<li>9709_s21_61_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s21_61_008.gif" alt=""></li><hr>
+			<li>9709_w21_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_62_006.gif" alt=""></li><hr>
+			<li>9709_w21_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w21_61_005.gif" alt=""></li><hr>
+			<li>9709_s22_63_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_63_002.gif" alt=""></li><hr>
+			<li>9709_s22_62_004<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_62_004.gif" alt=""></li><hr>
+			<li>9709_s22_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_62_003.gif" alt=""></li><hr>
+			<li>9709_s22_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s22_61_002.gif" alt=""></li><hr>
+			<li>9709_w22_62_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_62_005.gif" alt=""></li><hr>
+			<li>9709_w22_61_002<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w22_61_002.gif" alt=""></li><hr>
+			<li>9709_s23_63_008<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_63_008.gif" alt=""></li><hr>
+			<li>9709_s23_62_006<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_62_006.gif" alt=""></li><hr>
+			<li>9709_s23_61_007<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_s23_61_007.gif" alt=""></li><hr>
+			<li>9709_w23_61_005<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_61_005.gif" alt=""></li><hr>
+			<li>9709_w23_62_003<br><img data-src="https://ikhwanfisika.sirv.com/Images/cieCrop2/9709_w23_62_003.gif" alt=""></li><hr>
+			
+		</ol>
+	</div> 
+	
+	
+	
+
+</div> 
+</body>
+</html>
